@@ -68,7 +68,7 @@
      "language": "python",
      "metadata": {},
      "outputs": [],
-     "prompt_number": 44
+     "prompt_number": 22
     },
     {
      "cell_type": "markdown",
@@ -91,7 +91,7 @@
      "language": "python",
      "metadata": {},
      "outputs": [],
-     "prompt_number": 45
+     "prompt_number": 41
     },
     {
      "cell_type": "markdown",
@@ -114,7 +114,7 @@
       {
        "metadata": {},
        "output_type": "pyout",
-       "prompt_number": 46,
+       "prompt_number": 24,
        "text": [
         "  status: 0\n",
         "    nfev: 81\n",
@@ -126,7 +126,7 @@
        ]
       }
      ],
-     "prompt_number": 46
+     "prompt_number": 24
     },
     {
      "cell_type": "code",
@@ -144,7 +144,7 @@
       {
        "metadata": {},
        "output_type": "pyout",
-       "prompt_number": 47,
+       "prompt_number": 25,
        "text": [
         "   status: 0\n",
         "  success: True\n",
@@ -159,7 +159,7 @@
        ]
       }
      ],
-     "prompt_number": 47
+     "prompt_number": 25
     },
     {
      "cell_type": "markdown",
@@ -219,7 +219,7 @@
      "language": "python",
      "metadata": {},
      "outputs": [],
-     "prompt_number": 48
+     "prompt_number": 26
     },
     {
      "cell_type": "markdown",
@@ -246,7 +246,7 @@
      "language": "python",
      "metadata": {},
      "outputs": [],
-     "prompt_number": 49
+     "prompt_number": 27
     },
     {
      "cell_type": "markdown",
@@ -268,13 +268,13 @@
       {
        "metadata": {},
        "output_type": "pyout",
-       "prompt_number": 50,
+       "prompt_number": 28,
        "text": [
         "43.556874613889988"
        ]
       }
      ],
-     "prompt_number": 50
+     "prompt_number": 28
     },
     {
      "cell_type": "markdown",
@@ -299,7 +299,7 @@
      "language": "python",
      "metadata": {},
      "outputs": [],
-     "prompt_number": 51
+     "prompt_number": 29
     },
     {
      "cell_type": "markdown",
@@ -329,7 +329,7 @@
        ]
       }
      ],
-     "prompt_number": 52
+     "prompt_number": 30
     },
     {
      "cell_type": "markdown",
@@ -356,7 +356,7 @@
        ]
       }
      ],
-     "prompt_number": 53
+     "prompt_number": 31
     },
     {
      "cell_type": "markdown",
@@ -378,7 +378,7 @@
       {
        "metadata": {},
        "output_type": "pyout",
-       "prompt_number": 54,
+       "prompt_number": 32,
        "text": [
         "array([ 0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,\n",
         "        0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,  0.,\n",
@@ -386,7 +386,7 @@
        ]
       }
      ],
-     "prompt_number": 54
+     "prompt_number": 32
     },
     {
      "cell_type": "code",
@@ -416,11 +416,11 @@
        "output_type": "stream",
        "stream": "stdout",
        "text": [
-        "10.0957489014\n"
+        "8.83890509605\n"
        ]
       }
      ],
-     "prompt_number": 55
+     "prompt_number": 43
     },
     {
      "cell_type": "markdown",
@@ -456,13 +456,13 @@
       "One of the useful relation is $$\\frac{df(x)}{dx} = f(x)(1-f(x)).$$\n",
       "\n",
       "Derived by hand, the jac is a list of the following\n",
-      "for $v_\\alpha$ (Note that the k in this expression should be $\\alpha$ and no summation should be done.) (**double checked**):\n",
+      "for v\n",
       "$$2M_i(f(tw_{k'}+u_{k'}) +t f(tw_{k'}+u_{k'})(1-f(tw_{k'}+u_{k'}))w_{k'} + tf(tw_{k'} +u_{k'} )),$$\n",
       "\n",
-      "for $w_\\alpha$ (Note that the k in this expression should be $\\alpha$ and no summation should be done.) (**double checked**):\n",
+      "for w (**double checked**):\n",
       "$$2M_i(  v_{k'}tf(1-f) + t v_{k'}f(1-f)*t*(1-f) w_{k'} - t v_{k'} f f(1-f ) t  w_{k'}  + tv_{k'} f(1-f) + t v_{k'} f(')( 1 - f(') ) t  ),$$\n",
       "\n",
-      "for $u_\\alpha$ (Note that the k in this expression should be $\\alpha$ and no summation should be done.) (**double checked**):\n",
+      "for u:\n",
       "$$v_{k'} f(1-f) + t v_{k'} f(1-f) (1-f)w_{k'} - t v_{k'} f f(1-f) w_{k'} + t v_{k'} f(1-f) .$$\n",
       "\n",
       "where $k'$ is not summed over."
@@ -511,7 +511,7 @@
      "language": "python",
      "metadata": {},
      "outputs": [],
-     "prompt_number": 56
+     "prompt_number": 34
     },
     {
      "cell_type": "code",
@@ -525,13 +525,13 @@
       {
        "metadata": {},
        "output_type": "pyout",
-       "prompt_number": 57,
+       "prompt_number": 35,
        "text": [
         "7.0017275337961387"
        ]
       }
      ],
-     "prompt_number": 57
+     "prompt_number": 35
     },
     {
      "cell_type": "code",
@@ -545,13 +545,13 @@
       {
        "metadata": {},
        "output_type": "pyout",
-       "prompt_number": 58,
+       "prompt_number": 36,
        "text": [
         "array([ 1.99991041,  3.00013618])"
        ]
       }
      ],
-     "prompt_number": 58
+     "prompt_number": 36
     },
     {
      "cell_type": "markdown",
@@ -624,7 +624,7 @@
      "language": "python",
      "metadata": {},
      "outputs": [],
-     "prompt_number": 59
+     "prompt_number": 37
     },
     {
      "cell_type": "code",
@@ -643,7 +643,7 @@
        ]
       }
      ],
-     "prompt_number": 60
+     "prompt_number": 38
     },
     {
      "cell_type": "code",
@@ -657,7 +657,7 @@
       {
        "metadata": {},
        "output_type": "pyout",
-       "prompt_number": 61,
+       "prompt_number": 39,
        "text": [
         "array([  1.65704329e+02,   1.65700886e+02,   1.64940613e+02,\n",
         "         1.77254265e-01,  -1.35249788e-02,   5.86245567e+00,\n",
@@ -665,7 +665,7 @@
        ]
       }
      ],
-     "prompt_number": 61
+     "prompt_number": 39
     },
     {
      "cell_type": "code",
@@ -680,39 +680,24 @@
      "metadata": {},
      "outputs": [
       {
-       "metadata": {},
-       "output_type": "pyout",
-       "prompt_number": 62,
-       "text": [
-        "  status: 0\n",
-        " success: True\n",
-        "    njev: 119106\n",
-        "    nfev: 702\n",
-        "     fun: 0.09384196430775571\n",
-        "       x: array([-57.2424592 , -57.2424592 , -57.2424592 , -57.2424592 ,\n",
-        "       -57.2424592 , -57.2424592 , -57.2424592 , -57.2424592 ,\n",
-        "       -57.2424592 , -57.2424592 ,  -0.28879104,  -0.28879104,\n",
-        "        -0.28879104,  -0.28879104,  -0.28879104,  -0.28879104,\n",
-        "        -0.28879104,  -0.28879104,  -0.28879104,  -0.28879104,\n",
-        "        -6.5643978 ,  -6.5643978 ,  -6.5643978 ,  -6.5643978 ,\n",
-        "        -6.5643978 ,  -6.5643978 ,  -6.5643978 ,  -6.5643978 ,\n",
-        "        -6.5643978 ,  -6.5643978 ])\n",
-        " message: 'Optimization terminated successfully.'\n",
-        "    nhev: 0\n",
-        "     jac: array([  2.96741791e-07,   2.96741791e-07,   2.96741791e-07,\n",
-        "         2.96741791e-07,   2.96741791e-07,   2.96741791e-07,\n",
-        "         2.96741791e-07,   2.96741791e-07,   2.96741791e-07,\n",
-        "         2.96741791e-07,  -4.00804135e-07,  -4.00804135e-07,\n",
-        "        -4.00804135e-07,  -4.00804135e-07,  -4.00804135e-07,\n",
-        "        -4.00804135e-07,  -4.00804135e-07,  -4.00804135e-07,\n",
-        "        -4.00804135e-07,  -4.00804135e-07,  -1.03677557e-07,\n",
-        "        -1.03677557e-07,  -1.03677557e-07,  -1.03677557e-07,\n",
-        "        -1.03677557e-07,  -1.03677557e-07,  -1.03677557e-07,\n",
-        "        -1.03677557e-07,  -1.03677557e-07,  -1.03677557e-07])"
+       "ename": "KeyboardInterrupt",
+       "evalue": "",
+       "output_type": "pyerr",
+       "traceback": [
+        "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m\n\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+        "\u001b[0;32m<ipython-input-40-a8c0530d59c3>\u001b[0m in \u001b[0;36m<module>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      2\u001b[0m \u001b[0minitGuessJ\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mnp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mzeros\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m30\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;31m# initGuessJ = np.random.rand(1,30)+2\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 4\u001b[0;31m \u001b[0mminimize\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcostTotalF\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0minitGuessJ\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mmethod\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"Newton-CG\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mjac\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mcostJacF\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m",
+        "\u001b[0;32m/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/scipy/optimize/_minimize.pyc\u001b[0m in \u001b[0;36mminimize\u001b[0;34m(fun, x0, args, method, jac, hess, hessp, bounds, constraints, tol, callback, options)\u001b[0m\n\u001b[1;32m    371\u001b[0m     \u001b[0;32melif\u001b[0m \u001b[0mmeth\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;34m'newton-cg'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    372\u001b[0m         return _minimize_newtoncg(fun, x0, args, jac, hess, hessp, callback,\n\u001b[0;32m--> 373\u001b[0;31m                                   **options)\n\u001b[0m\u001b[1;32m    374\u001b[0m     \u001b[0;32melif\u001b[0m \u001b[0mmeth\u001b[0m \u001b[0;34m==\u001b[0m \u001b[0;34m'anneal'\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    375\u001b[0m         \u001b[0;32mreturn\u001b[0m \u001b[0m_minimize_anneal\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mfun\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mx0\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0margs\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m**\u001b[0m\u001b[0moptions\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+        "\u001b[0;32m/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/scipy/optimize/optimize.pyc\u001b[0m in \u001b[0;36m_minimize_newtoncg\u001b[0;34m(fun, x0, args, jac, hess, hessp, callback, xtol, eps, maxiter, disp, return_all, **unknown_options)\u001b[0m\n\u001b[1;32m   1393\u001b[0m             \u001b[0;32mif\u001b[0m \u001b[0mfhess\u001b[0m \u001b[0;32mis\u001b[0m \u001b[0mNone\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1394\u001b[0m                 \u001b[0;32mif\u001b[0m \u001b[0mfhess_p\u001b[0m \u001b[0;32mis\u001b[0m \u001b[0mNone\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1395\u001b[0;31m                     \u001b[0mAp\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mapprox_fhess_p\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mxk\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mpsupi\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mfprime\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mepsilon\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1396\u001b[0m                 \u001b[0;32melse\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1397\u001b[0m                     \u001b[0mAp\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mfhess_p\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mxk\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mpsupi\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+        "\u001b[0;32m/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/scipy/optimize/optimize.pyc\u001b[0m in \u001b[0;36mapprox_fhess_p\u001b[0;34m(x0, p, fprime, epsilon, *args)\u001b[0m\n\u001b[1;32m    660\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0mapprox_fhess_p\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx0\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mp\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mfprime\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mepsilon\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0;34m*\u001b[0m\u001b[0margs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    661\u001b[0m     \u001b[0mf2\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mfprime\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx0\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mepsilon\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mp\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0margs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 662\u001b[0;31m     \u001b[0mf1\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mfprime\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx0\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0margs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    663\u001b[0m     \u001b[0;32mreturn\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0mf2\u001b[0m \u001b[0;34m-\u001b[0m \u001b[0mf1\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m/\u001b[0m \u001b[0mepsilon\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    664\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+        "\u001b[0;32m/System/Library/Frameworks/Python.framework/Versions/2.7/Extras/lib/python/scipy/optimize/optimize.pyc\u001b[0m in \u001b[0;36mfunction_wrapper\u001b[0;34m(*wrapper_args)\u001b[0m\n\u001b[1;32m    279\u001b[0m     \u001b[0;32mdef\u001b[0m \u001b[0mfunction_wrapper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mwrapper_args\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    280\u001b[0m         \u001b[0mncalls\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m \u001b[0;34m+=\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m--> 281\u001b[0;31m         \u001b[0;32mreturn\u001b[0m \u001b[0mfunction\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mwrapper_args\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0margs\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m    282\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m    283\u001b[0m     \u001b[0;32mreturn\u001b[0m \u001b[0mncalls\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mfunction_wrapper\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+        "\u001b[0;32m<ipython-input-40-a8c0530d59c3>\u001b[0m in \u001b[0;36m<lambda>\u001b[0;34m(x)\u001b[0m\n\u001b[0;32m----> 1\u001b[0;31m \u001b[0mcostJacF\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0;32mlambda\u001b[0m \u001b[0mx\u001b[0m\u001b[0;34m:\u001b[0m \u001b[0mcostJac\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mnp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msplit\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m3\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m0\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mnp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msplit\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m3\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mnp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0msplit\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mx\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;36m3\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;36m2\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mtlin\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      2\u001b[0m \u001b[0minitGuessJ\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mnp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mzeros\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m30\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      3\u001b[0m \u001b[0;31m# initGuessJ = np.random.rand(1,30)+2\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0mminimize\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mcostTotalF\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0minitGuessJ\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mmethod\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;34m\"Newton-CG\"\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mjac\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0mcostJacF\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+        "\u001b[0;32m<ipython-input-37-6db094d49569>\u001b[0m in \u001b[0;36mcostJac\u001b[0;34m(v, w, u, t)\u001b[0m\n\u001b[1;32m     48\u001b[0m     \u001b[0;32mfor\u001b[0m \u001b[0mtemp\u001b[0m \u001b[0;32min\u001b[0m \u001b[0mt\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     49\u001b[0m         \u001b[0mvout\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mvout\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0;36m2\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mmhelper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mv\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mtemp\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mvhelper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mv\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mtemp\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 50\u001b[0;31m         \u001b[0mwout\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mwout\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0;36m2\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mmhelper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mv\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mtemp\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mwhelper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mv\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mtemp\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     51\u001b[0m         \u001b[0muout\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0muout\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0;36m2\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mmhelper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mv\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mtemp\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0muhelper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mv\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mtemp\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     52\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+        "\u001b[0;32m<ipython-input-34-cdcce750542e>\u001b[0m in \u001b[0;36mwhelper\u001b[0;34m(v, w, u, t)\u001b[0m\n\u001b[1;32m     19\u001b[0m     \u001b[0mu\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mnp\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0marray\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     20\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 21\u001b[0;31m     \u001b[0;32mreturn\u001b[0m \u001b[0mv\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mtrigf\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0;34m(\u001b[0m \u001b[0;36m1\u001b[0m\u001b[0;34m-\u001b[0m \u001b[0mtrigf\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m)\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mv\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0;34m(\u001b[0m \u001b[0mtrigf\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m-\u001b[0m\u001b[0mtrigf\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m \u001b[0;34m(\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m-\u001b[0m\u001b[0mtrigf\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;34m)\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mw\u001b[0m \u001b[0;34m-\u001b[0m \u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mv\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mtrigf\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mtrigf\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m-\u001b[0m\u001b[0mtrigf\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mw\u001b[0m \u001b[0;34m+\u001b[0m \u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mv\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mtrigf\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m-\u001b[0m\u001b[0mtrigf\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m  \u001b[0;34m+\u001b[0m \u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mv\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mtrigf\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m1\u001b[0m\u001b[0;34m-\u001b[0m\u001b[0mtrigf\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m+\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m*\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     22\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     23\u001b[0m \u001b[0;32mdef\u001b[0m \u001b[0muhelper\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mv\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mw\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mu\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0mt\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+        "\u001b[0;31mKeyboardInterrupt\u001b[0m: "
        ]
       }
      ],
-     "prompt_number": 62
+     "prompt_number": 40
     },
     {
      "cell_type": "markdown",
@@ -733,58 +718,24 @@
      "collapsed": false,
      "input": [
       "# funYNN(np.ones(10),np.ones(10),np.ones(10),2)\n",
-      "test13=np.array([-57.2424592 , -57.2424592 , -57.2424592 , -57.2424592 ,\n",
-      "       -57.2424592 , -57.2424592 , -57.2424592 , -57.2424592 ,\n",
-      "       -57.2424592 , -57.2424592 ,  -0.28879104,  -0.28879104,\n",
-      "        -0.28879104,  -0.28879104,  -0.28879104,  -0.28879104,\n",
-      "        -0.28879104,  -0.28879104,  -0.28879104,  -0.28879104,\n",
-      "        -6.5643978 ,  -6.5643978 ,  -6.5643978 ,  -6.5643978 ,\n",
-      "        -6.5643978 ,  -6.5643978 ,  -6.5643978 ,  -6.5643978 ,\n",
-      "        -6.5643978 ,  -6.5643978 ])\n",
+      "test13=np.array([ 0.1330613 ,  1.05982273,  0.18777729, -0.60789078, -0.96393469,\n",
+      "        -0.65270373, -1.55257864,  0.8002259 , -0.12414033, -0.21230861,\n",
+      "       -0.88629202,  0.47527367,  0.21401419,  0.2130512 , -1.5236408 ,\n",
+      "        1.35208616, -0.48922234, -0.85850735,  0.72135512, -1.03407686,\n",
+      "        2.29041152,  0.91184671, -0.56987761,  0.16597395, -0.43267372,\n",
+      "        2.1772668 , -0.1318482 , -0.80817762,  0.44533168, -0.28545885])\n",
       "\n",
       "for i in np.linspace(0,5,11):\n",
       "    print i,functionYNN(np.split(test13,3)[0],np.split(test13,3)[1],np.split(test13,3)[2],np.array([i]))[0]\n",
       "    \n",
-      "temp14 = np.array([])\n",
+      "temp = np.array([])\n",
       "for i in np.linspace(0,5,11):\n",
       "    temp14 = np.append(temp14,functionYNN(np.split(test13,3)[0],np.split(test13,3)[1],np.split(test13,3)[2],np.array([i]))[0])\n",
-      "\n",
-      "testTLin = np.linspace(0,5,11)\n",
-      "plt.figure(figsize=(10,6.18))\n",
-      "plt.plot(testTLin,functionY(testTLin),'bs')\n",
-      "plt.plot(testTLin,temp14,'r-')\n",
-      "plt.show()\n"
+      "\n"
      ],
      "language": "python",
      "metadata": {},
-     "outputs": [
-      {
-       "output_type": "stream",
-       "stream": "stdout",
-       "text": [
-        "0.0 1.0\n",
-        "0.5 0.651207776646\n",
-        "1.0 0.396110083829\n",
-        "1.5 0.215847617475\n",
-        "2.0 0.0949296115299\n",
-        "2.5 0.0206715817532\n",
-        "3.0 -0.0172773803624\n",
-        "3.5 -0.0273314702868\n",
-        "4.0 -0.0163008874018\n",
-        "4.5 0.0103296285809\n",
-        "5.0 0.048167966065\n"
-       ]
-      },
-      {
-       "metadata": {},
-       "output_type": "display_data",
-       "png": "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\n",
-       "text": [
-        "<matplotlib.figure.Figure at 0x107108090>"
-       ]
-      }
-     ],
-     "prompt_number": 73
+     "outputs": []
     },
     {
      "cell_type": "code",
@@ -838,7 +789,7 @@
       "    \n",
       "    t = np.array(t)\n",
       "    \n",
-      "    return 1 +  np.sum(t * v * trigf( t*w +u ) )\n",
+      "    return 1 +  np.sum(temp * v * trigf( temp*w +u ) )\n",
       "\n",
       "\n",
       "\n",
@@ -859,16 +810,7 @@
      ],
      "language": "python",
      "metadata": {},
-     "outputs": [
-      {
-       "output_type": "stream",
-       "stream": "stdout",
-       "text": [
-        "\n"
-       ]
-      }
-     ],
-     "prompt_number": 68
+     "outputs": []
     },
     {
      "cell_type": "code",
