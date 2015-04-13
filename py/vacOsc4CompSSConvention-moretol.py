@@ -104,30 +104,16 @@ def cost(x,t,initialCondition):
 
     return 0.5*np.sum(costTotal)
 
-
-# In[11]:
-
 cost(array12,np.array([0,1,2]),init)
-#cost(xresult,np.array([0,4,11]),init)
-
-
-# <a id='numpyopt'></a>
-# -----
-# ## NUMPY OPT
-
-# In[12]:
-
-# with ramdom initial guess. TO make it more viable, I used (-5,5)
-
-# initGuess = np.asarray(np.split( 5.0*(np.random.rand(1,60)[0] - 0.5),12))
+#initGuess = np.asarray(np.split( 5.0*(np.random.rand(1,60)[0] - 0.5),12))
 initGuess = np.split(np.zeros(60),12)
-endpoint = 4
+endpoint = 2
 tlin = np.linspace(0,endpoint,11)
 
 costF = lambda x: cost(x,tlin,init)
 
 start = timeit.default_timer()
-costvFResult = minimize(costF,initGuess,method='Nelder-Mead',tol=1e-5,options={"ftol":1e-3, "maxfev": 10000000,"maxiter":10000000})
+costvFResult = minimize(costF,initGuess,method='Nelder-Mead',tol=1e-9,options={"ftol":1e-3, "maxfev": 100000000,"maxiter":100000000})
 stop = timeit.default_timer()
 
 print stop - start
@@ -136,16 +122,14 @@ timespent = stop - start
 print costvFResult
 
 
-# In[ ]:
-
 xresult = costvFResult.get("x")
 
 print xresult
 
 #np.savetxt('costvFResult.txt',costvFResult,delimiter=',')
 
-np.savetxt('xresult.txt', xresult, delimiter = ',')
+np.savetxt('xresult-moretol.txt', xresult, delimiter = ',')
 
-np.savetxt('timespent.txt', np.array([timespent]), delimiter = ',')
+np.savetxt('timespent-moretol.txt', np.array([timespent]), delimiter = ',')
 
-np.savetxt('functionvalue.txt', np.array([costvFResult.fun]), delimiter=',')
+np.savetxt('functionvalue-moretol.txt', np.array([costvFResult.fun]), delimiter=',')
