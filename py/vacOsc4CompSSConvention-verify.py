@@ -110,18 +110,9 @@ def cost(x,t,initialCondition):
 cost(array12,np.array([0,1,2]),init)
 #cost(xresult,np.array([0,4,11]),init)
 
-
-# <a id='numpyopt'></a>
-# -----
-# ## NUMPY OPT
-
-# In[12]:
-
-# with ramdom initial guess. TO make it more viable, I used (-5,5)
-
 # initGuess = np.asarray(np.split( 5.0*(np.random.rand(1,60)[0] - 0.5),12))
 initGuess = np.split(np.zeros(60),12)
-endpoint = 4
+endpoint = 2
 tlin = np.linspace(0,endpoint,11)
 
 costF = lambda x: cost(x,tlin,init)
@@ -136,7 +127,6 @@ timespent = stop - start
 print costvFResult
 
 
-# In[ ]:
 
 xresult = costvFResult.get("x")
 

@@ -62,3 +62,5 @@ def yp(partot):
 vout=minimize(yp,partot,method='Nelder-Mead',tol=1e-7,options={"ftol":1e-3, "maxfev": 1000000,"maxiter":1000000})
 #vout=differential_evolution(yp,bounds,strategy='best1bin',tol=0.1,maxiter=1,polish=True)
 print vout
+
+np.savetxt('vout.txt', vout.x, delimiter = ',')

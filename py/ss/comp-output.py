@@ -63,8 +63,4 @@ vout=minimize(yp,partot,method='Nelder-Mead',tol=1e-5,options={"ftol":1e-3, "max
 #vout=differential_evolution(yp,bounds,strategy='best1bin',tol=0.1,maxiter=1,polish=True)
 print vout
 
-f = open("filename.txt", 'w')
-f.write(vout)
-f.close()
-
-np.savetxt('vout.txt', vout, delimiter=',')
+np.savetxt('vout-output.txt', vout, delimiter=',')

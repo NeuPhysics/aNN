@@ -4,7 +4,7 @@ from scipy.optimize import minimize #, differential_evolution
 import numpy as np
 from math import sin,cos
 #xarr=var('xarr')
-x=np.linspace(0,2,11)
+x=np.linspace(0,3,11)
 #x=np.array([1.0])
 hvar=5
 numeqs=4
@@ -59,14 +59,10 @@ def yp(partot):
 #def ypprime(par): 
 #vout=minimize(yp,par,method='COBYLA',options={"maxfev": 10000})
 #vout=minimize(yp,partot,method='SLSQP',options={"maxiter": 1000})
-vout=minimize(yp,partot,method='Nelder-Mead',tol=1e-11,options={"ftol":1e-9, "maxfev": 100000000,"maxiter":1000000000})
+vout=minimize(yp,partot,method='Nelder-Mead',tol=1e-11,options={"ftol":1e-9, "maxfev": 1000000000,"maxiter":1000000000})
 #vout=differential_evolution(yp,bounds,strategy='best1bin',tol=0.1,maxiter=1,polish=True)
 print vout
 
 
-f = open("vout-acc-file.txt", 'w')
-f.write(vout)
-f.close()
-
-np.savetxt('vout-acc.txt', vout, delimiter=',')
-
+np.savetxt('vout-acc-x.txt', vout.x, delimiter=',')
+np.savetxt('vout-acc-funvalue.txt', np.array([vout.fun]), delimiter=',')
